@@ -1,0 +1,106 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558 
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "cmake",
+            "command": "cmake",
+            "args": [
+                "../"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/build"
+            },
+        },
+        {
+            "type": "shell",
+            "label": "show the path",
+            "command": "echo",
+            "args": [
+                "${workspaceFolder}"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+        },
+        {
+            "type": "shell",
+            "label": "clean binary",
+            "command": "rm",
+            "args": [
+                "-rf",
+                "*"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/build"
+            },
+        },
+        {
+            "type": "shell",
+            "label": "clean exe",
+            "command": "rm",
+            "args": [
+                "-rf",
+                "*"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/exe"
+            },
+        },
+        {
+            "type": "shell",
+            "label": "clean img",
+            "command": "rm",
+            "args": [
+                "*.jpg",
+                "images.xml",
+                "out_camera_data.xml"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/img"
+            },
+        },
+        {
+            "type": "shell",
+            "label": "make",
+            "command": "make",
+            "options": {
+                "cwd": "${workspaceFolder}/build"
+            }
+        },
+        {
+            "label": "build",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "cmake",
+                "make"
+            ]   
+        },
+        {
+            "type": "shell",
+            "label": "run main1",
+            "command":"./main1_initboard",
+            "options": {
+                "cwd": "${workspaceFolder}/exe"
+            }
+        },
+        {
+            "type": "shell",
+            "label": "run main2",
+            "command": "./main2_takeImgs",
+            "options": {
+                "cwd": "${workspaceFolder}/exe"
+            }
+        },
+        {
+            "type": "shell",
+            "label": "run main3",
+            "command": "./main3_calibration",
+            "options": {
+                "cwd": "${workspaceFolder}/exe"
+            }
+        }
+    ]
+}

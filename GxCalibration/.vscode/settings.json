@@ -1,0 +1,18 @@
+{
+    "files.associations": {
+        "core.hpp": "c",
+        "iostream": "c",
+        "ostream": "cpp",
+        "new": "cpp",
+        "array": "cpp",
+        "bitset": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "vector": "cpp",
+        "unordered_map": "cpp",
+        "*.ipp": "cpp",
+        "list": "cpp",
+        "initializer_list": "cpp",
+        "iosfwd": "cpp"
+    }
+}
