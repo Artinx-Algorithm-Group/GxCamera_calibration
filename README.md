@@ -27,9 +27,7 @@ make
 And You will find the executable in ${workspaceFolder}/exe
 
 
-
-
-
+<br/>
 If in vscode:     
 
 
