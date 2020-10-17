@@ -1,18 +1,29 @@
 # GxCamera_calibration
-~\\
+
+
+
 ## Environment:
 OpenCV4.4.0 + (Daheng Galaxy Linux)MDK
-~\\
+
+
+
 ## Build & Run:
-~\\
+
+
+
 If in terminal:
-~\\
-`cd build`
-~\\
-`cmake ..`
-~\\
-`make`
-~\\
+
+
+```
+cd build
+
+
+cmake ..
+
+
+make
+```
+
 And You will find the executable in ${workspaceFolder}/exe
 ~\\
 If in vscode:
