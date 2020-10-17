@@ -11,7 +11,7 @@ OpenCV4.4.0 + (Daheng Galaxy Linux)MDK
 
 
 
-If in terminal:
+###If in terminal:
 
 
 ```
@@ -27,8 +27,9 @@ make
 And You will find the executable in ${workspaceFolder}/exe
 
 
-<br/>
-If in vscode:  
+
+
+###If in vscode:  
 
 
 
