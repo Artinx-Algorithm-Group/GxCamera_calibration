@@ -28,8 +28,9 @@ And You will find the executable in ${workspaceFolder}/exe
 
 
 <br/>
-If in vscode:     
-<\br>  
+If in vscode:  
+
+
 
 Run Task : build (to build all)
 
